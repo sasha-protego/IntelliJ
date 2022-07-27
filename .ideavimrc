@@ -1,0 +1,39 @@
+set ideajoin
+set number relativenumber
+set is
+
+let mapleader = ","
+
+nmap gr <Action>(FindUsages)
+
+nmap <leader>tn <Action>(ContextRun)
+nmap <leader>tl <Action>(ChooseRunConfiguration)
+
+nmap <leader>es <Action>(ShowErrorDescription)
+nmap <leader>en <Action>(GotoNextError)
+
+nmap <leader>nf <Action>(GotoFile)
+nmap <leader>nb <Action>(RecentFiles)
+nmap <leader>ns <Action>(GotoSymbol)
+nmap <leader>nc <Action>(GotoClass)
+nmap <leader>fs <Action>(FileStructurePopup)
+nmap <leader>rt <Action>(Refactorings.QuickListPopupAction)
+
+nmap <leader>sw <Action>(SurroundWith)
+
+nmap <leader>c <Action>(MakeModule)
+nmap <leader>oi <Action>(OptimizeImports) 
+nmap <leader>im <Action>(ImplementMethods) 
+nmap <leader>om <Action>(OverrideMethods) 
+
+nmap <leader>bm <Action>(BuildMenu)
+
+
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+
+set NERDTree
+let g:NERDTreeMapActivateNode='l'
+let g:NERDTreeMapJumpParent='h'
+
+Plug 'tpope/vim-commentary'
